@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        PreferenceManager.setDefaultValues(this, R.xml.pref_general, false);
+        //setting default values
+        PreferenceManager.setDefaultValues(this, R.xml.pref_general, false);//true will override current value with defaults
         PreferenceManager.setDefaultValues(this,  R.xml.pref_notification, false);
         PreferenceManager.setDefaultValues(this, R.xml.pref_data_sync, false);
 

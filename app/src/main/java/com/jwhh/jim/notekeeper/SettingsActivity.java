@@ -191,9 +191,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("user_display_name"));
-            bindPreferenceSummaryToValue(findPreference("user_email_address"));
-            bindPreferenceSummaryToValue(findPreference("user_favorite_social"));
+            bindPreferenceSummaryToValue(findPreference("user_display_name"));//must be same key used in preference_general - must match
+            bindPreferenceSummaryToValue(findPreference("user_email_address"));//must be same key used in preference_general
+            bindPreferenceSummaryToValue(findPreference("user_favorite_social"));//must be same key used in preference_general
         }
 
         @Override
