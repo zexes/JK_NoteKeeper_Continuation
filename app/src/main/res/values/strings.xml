@@ -98,6 +98,7 @@
         <item>http://facebook.com</item>
         <item>http://twitter.com</item>
     </string-array>
+    <!--default value-->
     <string name="pref_default_favorite_social">http://plus.google.com</string>
 </resources>
 
