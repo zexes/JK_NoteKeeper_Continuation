@@ -175,6 +175,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    //showing valuw iof social network chosen
     private void handleShare() {
         View view = findViewById(R.id.list_items);
         Snackbar.make(view, "Share to - " +
