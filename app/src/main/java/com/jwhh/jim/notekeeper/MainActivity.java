@@ -62,11 +62,12 @@ public class MainActivity extends AppCompatActivity
         initializeDisplayContent();
     }
 
+    //updating header here: good because on resume is called everytime we return to this activity
     @Override
     protected void onResume() {
         super.onResume();
         mNoteRecyclerAdapter.notifyDataSetChanged();
-        updateNavHeader();
+        updateNavHeader();//update method
     }
 
     private void updateNavHeader() {
@@ -75,10 +76,12 @@ public class MainActivity extends AppCompatActivity
         TextView textUserName = (TextView)headerView.findViewById(R.id.text_user_name);
         TextView textEmailAddress = (TextView)headerView.findViewById(R.id.text_email_address);
 
+        //getting the values
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
         String userName = pref.getString("user_display_name", "");
         String emailAddress = pref.getString("user_email_address", "");
 
+        //assigning the values to the text views
         textUserName.setText(userName);
         textEmailAddress.setText(emailAddress);
     }
