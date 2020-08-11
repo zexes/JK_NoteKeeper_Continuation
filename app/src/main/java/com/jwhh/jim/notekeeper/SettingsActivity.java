@@ -174,6 +174,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 || NotificationPreferenceFragment.class.getName().equals(fragmentName);
     }
 
+    //LOADS GENERAL PREFERENCE
     /**
      * This fragment shows general preferences only. It is used when the
      * activity is showing a two-pane settings UI.
@@ -206,6 +207,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         }
     }
 
+    //LOADS NOTIFICATION PREFERENCE
     /**
      * This fragment shows notification preferences only. It is used when the
      * activity is showing a two-pane settings UI.
@@ -236,6 +238,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         }
     }
 
+    //LOADS DATA AND SYNC PREFERENCE
     /**
      * This fragment shows data and sync preferences only. It is used when the
      * activity is showing a two-pane settings UI.
